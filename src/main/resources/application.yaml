@@ -1,0 +1,11 @@
+logging:
+  level:
+    org.springframework: info
+    com.harm: debug
+
+spring:
+  output:
+    ansi:
+      enabled: always
+  mvc:
+    ignore-default-model-on-redirect: true

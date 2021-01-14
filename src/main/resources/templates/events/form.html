@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    hello, usage07, events -> <div th:text="#{size}"></div>
+    <form action="#" th:action="@{/usage07/events/form}" method="post" th:object="${initEvent}">
+        <input type="text" title="id" th:field="*{id}">
+        <input type="text" title="name" th:field="*{name}">
+        <input type="text" title="limit" th:field="*{limit}">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
